@@ -1,0 +1,32 @@
+cy_members的sql语句最终会从redis中获得
+
+cy_members
+
+username  => 注册账号
+
+flag=>账号状态，0为正常，1为冻结
+
+reg_time  =》注册时间，转为datetime类型
+
+imeil   => IMEI码
+
+--------------------------
+
+gameid   =》 到cy_game表查询，获取cy_game表name字段，  excel列名体现为:游戏
+agent  => 到cy_department表查询，获取cy_department表name字段，excel列名体现为:渠道名称
+
+
+使用id到cy_logininfo表，查询最后一次登录时间，cy_logininfo字段login_time，转为datetime类型，excel列名体现为:最后一次登录时间
+SELECT  `login_time` from `cy_logininfo` WHERE `userid`=%id%
+
+使用id到cy_pay表，sum出amount总额，excel列名体现为:累计充值金额
+select sum(amount) from cy_pay where userid=%id% and status=1;
+
+
+使用id到cy_pay表，count出记录数，excel列名体现为:累计充值次数
+select count(id) from cy_pay where userid=%id% and status=1;
+
+
+使用agent字段，调用顶级渠道的函数，  excel列名体现为:顶级渠道，若值为空，显示---
+
+ -------------------
