@@ -2,7 +2,12 @@
 #-*- coding:utf-8 -*-
 import os
 import time
+
 from openpyxl import Workbook
+
+
+from db import db_mysql
+
 
 def setFieldNameMap():
 	return {
@@ -24,6 +29,7 @@ def setFieldNameMap():
 
 titleMap = setFieldNameMap()
 title_name = titleMap.keys()
+decimal_fields = ['amount', 'real_amount', 'real_ptb',];
 
 def createSheet(wb, sheetName):
     ws = wb.create_sheet(
@@ -61,9 +67,39 @@ def createReportFile(path):
     filename = str(int(time.time())) + '.xlsx'
     return os.path.join(path, filename)
 
+pageSize = 5
+titleRow = 1
+def pageWrite(ws, data, page=1):
+	pageStartRow = (
+		(page - 1) * pageSize + titleRow + 1
+	)
+	dbFiled = list(data.keys())
+	data = list(data.values())
+	for row in range(0, len(data)):
+		availableColIdx = 0;
+		for col in range(0, len(dbFiled)):
+			field_name = dbFiled[col];
+			if field_name in setFieldNameMap():
+				availableColIdx += 1;
+				value = data[col]
+				if field_name in decimal_fields:
+					value = float(value);
+				else:
+					value = (u'%s' % value);
+				ws.cell(
+					row = thisPageRowStartAt + row,
+					column = availableColIdx
+				).value = value;
+
 
 if __name__ == '__main__':
-    wb = Workbook()
-    ws = createSheet(wb, setSheetName())
-    setTitle(ws, title_name)
-    wb.save(createReportFile(doc_dir))
+	dbfield, dbdata = db_mysql.ExcuteSql().query_sql('select username,flag,gameid,id,reg_time,agent,imeil from cy_members limit 20')
+	data_dict = dict(zip(dbfield,zip(*dbdata)))
+	print(data_dict)
+	wb = Workbook()
+	ws = createSheet(wb, setSheetName())
+	setTitle(ws, title_name)
+	for i in range(2):
+		pageWrite(ws, data_dict, i)
+
+	wb.save(createReportFile(doc_dir))

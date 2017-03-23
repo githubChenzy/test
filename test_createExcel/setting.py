@@ -9,9 +9,9 @@ mysql_config = dict(
 	host='192.168.5.200',
 	user='root',
 	passwd='root',
-	post=3306,
-	db='mg_sdk_game',
-	charset='utf-8',
+	port=3306,
+	db='db_sdk_moge',
+	charset='utf8',
 )
 
 log_path = os.path.join(os.path.dirname(__file__), 'log')
@@ -36,7 +36,7 @@ LOGGING = {
 		'fmt': {
 			# 'datefmt': '%Y-%m-%d %H:%M:%S',
 			'datefmt': '%a, %b %Y %m %d %H:%M:%S',
-			'format': '%(asctime)s [filename: %(filename)s] [line: %(lineno)s]: %(message)s'
+			'format': '%(asctime)s [level: %(levelname)s] [filename: %(filename)s] [line: %(lineno)s]: %(message)s'
 		}
 	},
 	'handlers': {  # 各种handler的一些配置参数

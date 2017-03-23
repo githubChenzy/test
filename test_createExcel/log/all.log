@@ -1,2 +1,131 @@
 Wed, Mar 2017 03 22 22:29:46 [filename: setting.py] [line: 86]: test logging error
 Wed, Mar 2017 03 22 22:29:46 [filename: setting.py] [line: 87]: test logging info
+Thu, Mar 2017 03 23 10:14:51 [filename: mysql.py] [line: 47]: 'module' object has no attribute 'mysql_conf'
+Thu, Mar 2017 03 23 10:14:51 [filename: mysql.py] [line: 54]: 'ExcuteSql' object has no attribute '_ExcuteSql__conn'
+Thu, Mar 2017 03 23 10:18:33 [filename: mysql.py] [line: 47]: 'module' object has no attribute 'mysql_conf'
+Thu, Mar 2017 03 23 10:18:33 [filename: mysql.py] [line: 54]: 'ExcuteSql' object has no attribute '_ExcuteSql__conn'
+Thu, Mar 2017 03 23 10:19:39 [filename: mysql.py] [line: 47]: 'port'
+Thu, Mar 2017 03 23 10:19:39 [filename: mysql.py] [line: 54]: 'ExcuteSql' object has no attribute '_ExcuteSql__conn'
+Thu, Mar 2017 03 23 10:20:14 [filename: mysql.py] [line: 47]: (1049, "Unknown database 'mg_sdk_game'")
+Thu, Mar 2017 03 23 10:20:14 [filename: mysql.py] [line: 54]: 'ExcuteSql' object has no attribute '_ExcuteSql__conn'
+Thu, Mar 2017 03 23 10:21:12 [filename: mysql.py] [line: 47]: (2019, "Can't initialize character set utf-8 (path: C:\\mysql\\\\share\\charsets\\)")
+Thu, Mar 2017 03 23 10:21:12 [filename: mysql.py] [line: 54]: 'ExcuteSql' object has no attribute '_ExcuteSql__conn'
+Thu, Mar 2017 03 23 15:11:02 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:15:07 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:21:20 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:22:42 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:26:12 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:26:31 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:30:29 [filename: db_mysql.py] [line: 54]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Thu, Mar 2017 03 23 15:32:51 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 15:34:12 [filename: CreateReport.py] [line: 159]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:34:12 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 15:40:01 [filename: CreateReport.py] [line: 159]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:40:01 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 15:45:27 [filename: CreateReport.py] [line: 159]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:45:27 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 15:47:01 [filename: CreateReport.py] [line: 159]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:47:41 [filename: CreateReport.py] [line: 159]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:52:57 [filename: CreateReport.py] [line: 157]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:52:57 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 15:56:03 [filename: CreateReport.py] [line: 161]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 15:56:03 [filename: CreateReport.py] [line: 128]: invalid literal for int() with base 10: 'default'
+Thu, Mar 2017 03 23 15:56:03 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 16:00:49 [filename: CreateReport.py] [line: 163]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:00:49 [filename: CreateReport.py] [line: 130]: invalid literal for int() with base 10: 'default'
+Thu, Mar 2017 03 23 16:00:49 [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 16:03:44 [level: INFO] [filename: CreateReport.py] [line: 164]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:03:44 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'default'
+Thu, Mar 2017 03 23 16:03:44 [level: ERROR] [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 16:04:38 [level: INFO] [filename: CreateReport.py] [line: 164]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:04:38 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'default'
+Thu, Mar 2017 03 23 16:04:38 [level: ERROR] [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 16:08:42 [level: INFO] [filename: CreateReport.py] [line: 164]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:08:42 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'default'
+Thu, Mar 2017 03 23 16:08:42 [level: ERROR] [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 16:09:18 [level: INFO] [filename: CreateReport.py] [line: 164]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:09:18 [level: ERROR] [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 16:09:41 [level: INFO] [filename: CreateReport.py] [line: 164]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:10:56 [level: INFO] [filename: CreateReport.py] [line: 165]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:22:30 [level: INFO] [filename: CreateReport.py] [line: 165]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 16:23:23 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:34 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:35 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:35 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:35 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:35 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:35 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:36 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:36 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:43 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:43 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:44 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:23:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:07 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:13 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:24:19 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:35 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:42 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:49 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:54 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:54 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:24:54 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:08 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:08 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:08 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:09 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:09 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:10 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:10 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:10 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:10 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:10 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:10 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:11 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:11 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 16:25:14 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:21 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:22 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:22 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:22 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:22 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:22 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:23 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:23 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:23 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:25:24 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:28:49 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:43:32 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:34 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:52 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:52 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 16:44:53 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:05:58 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:09:57 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:10:00 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:10:17 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:10:20 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:10:21 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:10:22 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:16:40 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:16:44 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'defalut'
+Thu, Mar 2017 03 23 17:20:11 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:20:17 [level: ERROR] [filename: CreateReport.py] [line: 131]: invalid literal for int() with base 10: 'DEFAULT'
+Thu, Mar 2017 03 23 17:21:50 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:23:35 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:23:35 [level: ERROR] [filename: db_mysql.py] [line: 54]: (1054, "Unknown column 'None' in 'where clause'")
+Thu, Mar 2017 03 23 17:24:00 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:29:24 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:37:14 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:39:53 [level: INFO] [filename: CreateReport.py] [line: 166]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:42:05 [level: INFO] [filename: CreateReport.py] [line: 167]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:44:27 [level: INFO] [filename: CreateReport.py] [line: 168]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:47:42 [level: INFO] [filename: CreateReport.py] [line: 168]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:48:44 [level: INFO] [filename: CreateReport.py] [line: 168]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
+Thu, Mar 2017 03 23 17:54:36 [level: INFO] [filename: CreateReport.py] [line: 168]: 开始进行报表数据填充(任务略微有点耗时,请耐心等待)....
