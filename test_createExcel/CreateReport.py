@@ -108,12 +108,14 @@ class RegisterList(object):
 		if filed == "count(id)":
 			sql = 'select count(id) from cy_pay where userid=%s and status=1;' % value
 			_, value = db_mysql.ExcuteSql().query_sql(sql)
-			print("count id: ", value[0][0])
+			value = value[0]
+			print("count id: ", value[0])
 
 		if filed == 'sum(amount)':
 			sql = 'select sum(amount) from cy_pay where userid=%s and status=1;'% value
 			_, value = db_mysql.ExcuteSql().query_sql(sql)
-			print('sum amount: ', value[0][0])
+			value = value[0]
+			print('sum amount: ', value[0])
 
 		if filed == 'login_time':
 			sql = 'select max(login_time) from cy_logininfo where userid=%s;' % value
