@@ -75,6 +75,7 @@ class RegisterList(object):
 						value = float(value);
 					else:
 						value = (u'%s' % value);
+				print('要填充的excel值--->', value)
 				self.ws.cell(
 					row=thisPageRowStartAt + row,
 					column=availableColIdx
@@ -83,8 +84,10 @@ class RegisterList(object):
 	def _handle_excelvalue(self, filed, value):
 		print('filed value', filed, value)
 
-		if (value == u'None') or (value == u'default') or (value == None) or (value == 'DEFAULT') or (value == u'defalut'):
+		if (value == u'default') or (value == None) or (value == 'DEFAULT') or (value == u'defalut'):
+			value = '---'
 			return value
+
 		pay_list_status_desc = {
 			0: '待支付',
 			1: '支付成功',
@@ -95,55 +98,50 @@ class RegisterList(object):
 			0: '正常',
 			1: '冻结'
 		}
+
+		# sql_dict = {
+		# 	'count(id)':
+		# 	'sum(amount)':
+		# 	'login_time':
+		# 	'agent':
+		# 	"gameid":
+		# }
+
 		if filed == "flag":
 			value = user_status.get(value, "未知状态")
-			print('flag: ', value)
 
 		if filed == 'reg_time':
 			value = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(float(value)))
-			print('reg_time: ', value)
-		# if filed == 'channel_id':
-		# 	value = TopDepartmentCache().getTopDepartmentName(value);
 
 		if filed == "count(id)":
 			sql = 'select count(id) from cy_pay where userid=%s and status=1;' % value
 			_, value = db_mysql.ExcuteSql().query_sql(sql)
-			value = value[0]
-			print("count id: ", value[0])
 
 		if filed == 'sum(amount)':
 			sql = 'select sum(amount) from cy_pay where userid=%s and status=1;'% value
 			_, value = db_mysql.ExcuteSql().query_sql(sql)
-			value = value[0]
-			print('sum amount: ', value[0])
 
 		if filed == 'login_time':
 			sql = 'select max(login_time) from cy_logininfo where userid=%s;' % value
 			_, value = db_mysql.ExcuteSql().query_sql(sql)
-			print('login_time: ', value[0][0])
 			value = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(value[0][0]))
 
 		if filed == 'agent':
-			print(value)
-			try:
-				if isinstance(int(value), int) or isinstance(int(value), long):
-					sql = 'select name from cy_department where id=%s' % value
-					_, value = db_mysql.ExcuteSql().query_sql(sql)
-					value = value if value else '---'
-			except Exception as e:
-				logger.error(e)
-				raise e
-
-			print('agent: ', value)
+			sql = 'select name from cy_department where id=%s' % value
+			_, value = db_mysql.ExcuteSql().query_sql(sql)
 
 		if filed == "gameid" :
 			sql = 'select name from cy_game where id=%s' % value
 			_, value = db_mysql.ExcuteSql().query_sql(sql)
-			value = value[0][0] if len(value) else '---'
-			print('before gameid: ', value)
-			print('gameid: ', value)
 
-		return value;
+		temp_val = []
+		f = lambda value, f: [ temp_val.append(val) if not isinstance(val, tuple) else f(val, f) for val in value]
+		if isinstance(value, tuple):
+			f(value, f)
+			if len(temp_val) > 0:
+				value = temp_val[0]
+
+		return value if value else '---';
 
 	def create(self):
 		# sql = self.queueValue.get("sql");
