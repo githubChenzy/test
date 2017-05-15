@@ -6,12 +6,12 @@ import logging
 import logging.config
 
 mysql_config = dict(
-	host='192.168.5.200',
-	user='root',
-	passwd='root',
-	port=3306,
-	db='db_sdk_moge',
-	charset='utf8',
+	host='xxxx',
+	user='xxxx',
+	passwd='xxxx',
+	port=xxxx,
+	db='xxxxx',
+	charset='xxxx',
 )
 
 log_path = os.path.join(os.path.dirname(__file__), 'log')
